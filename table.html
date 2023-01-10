@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form validation</title>
+<style>
+
+body{
+background-color:skyblue;
+}
+
+.grid-container{
+display:grid;
+grid-template-columns:80px 200px ; 
+grid-template-rows:80px  ;
+grid-gap:15px;
+border:2px solid black;
+background:lightgrey;
+padding:10px;
+}
+
+input[type=digit]{
+padding:5px 1px;
+margin:1px 0;
+box-sizing:border-box;
+border:3px solid #555;
+
+}
+
+input[type=text]{
+padding:5px 1px;
+margin:1px 0;
+corcle-sizing:border-cirlce;
+border:3px solid #555;
+
+}
+
+
+input[type=password]{
+padding:5px 1px;
+margin:1px 0;
+corcle-sizing:border-cirlce;
+border:3px solid #555;
+
+}
+
+input[type=date]{
+padding:5px 1px;
+margin:1px 0;
+corcle-sizing:border-cirlce;
+border:3px solid #555;
+
+}
+
+input[type=submit]{
+padding:5px 1px;
+margin:1px 0;
+corcle-sizing:border-cirlce;
+border:3px solid #555;
+
+}
+
+input[type=reset]{
+padding:5px 1px;
+margin:1px 0;
+corcle-sizing:border-cirlce;
+border:3px solid #555;
+
+}
+
+fieldset{
+border:5px solid darkblue;
+background-color:lightgrey;
+}
+</style>
+<script>
+function validate(){
+
+if(document.getElementById("t1").value=="")
+{
+alert("please provide your First Name!");
+document.getElementById("t1").focus();
+return false;
+}
+
+if(document.getElementById("t2").value=="")
+{
+alert("please provide your Last Name!");
+document.getElementById("t2").focus();
+return false;
+}
+
+if(document.getElementById("t3").value=="")
+{
+alert("please provide your DOB!");
+document.getElementById("t3").focus();
+return false;
+}
+
+if(document.getElementById("t4").value=="")
+{
+alert("please provide your Gender");
+document.getElementById("t4").focus();
+return false;
+}
+
+
+
+if(document.getElementById("t5").value=="")
+{
+alert("please provide your Adresss");
+document.getElementById("t5").focus();
+return false;
+}
+
+if(document.getElementById("t6").value.length!=10)
+{
+alert("please provide 10 digit's in your mobile number!!");
+document.getElementById("t6").focus();
+return false;
+}
+
+if(document.getElementById("t7").value=="")
+{
+alert("please select your City");
+document.getElementById("t7").focus();
+return false;
+}
+
+if(document.getElementById("t8").value=="")
+{
+alert("please select your State");
+document.getElementById("t8").focus();
+return false;
+}
+
+
+ var emailID = document.getElementById("t9").value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("t9").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.getElementById("t9").focus() ;
+            return false;
+         }
+                
+if(document.getElementById("t10").value==""||
+isNaN(document.getElementById("t10").value)||
+document.getElementById("t10").value.length!=5)
+{
+alert("please provide your correct pincode");
+document.getElementById("t10").focus();
+return false;
+}
+
+if( document.getElementById("t11").value.length<8 )
+         {
+            alert( "password must contain atleast 8 digits" );
+document.getElementById("t11").focus() ;
+            return false;
+         }
+if( document.getElementById("t12").value =="" )
+         {
+            alert( "please enter confirm password" );
+document.getElementById("t12").focus() ;
+            return false;
+         }
+if( document.getElementById("t12").value.length<8 )
+         {
+            alert( " confirm password must contain atleast 8 digits" );
+document.getElementById("t12").focus() ;
+            return false;
+         }
+if( document.getElementById("t12").value.length>=8 && 
+document.getElementById("t11").value.length>=8)
+         {
+           if(document.getElementById("t12").value!=
+		   document.getElementById("t11").value)
+{
+            alert( " Password mismatched" );
+document.getElementById("t12").focus() ;
+            return false;
+}
+} 
+       return( true );
+      }
+
+function myfunction1(){
+ alert("your form is reseted");
+}
+
+function myfunction(){
+ alert("Page is loading !! wait");
+}
+
+function myfunction2(){
+ alert("your form is submitted");
+}
+
+function myfunction3(x){
+ x.style.background="skyblue";
+}
+</script>
+
+</head>
+<body onload="myfunction()">
+
+<div class="grid-container">
+  <div class="item1">
+<img src="https://www.nanubhaiproperty.com/images/thumbs/logo/75243_broker-asian-property-dealers-in-hyderabad_300.jpeg" alt="image is not available" usemap="#workmap" width="80" height="80" border="3px solid black">
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="image is not available"  href="">
+</map>
+</div>
+<div class="item2">
+<h3>P.S DEALERS</h3>
+</div>
+</div>
+
+<br>
+<h1><i><u><center>Please Fill The Form For Making The Account In Our Website</center></u></i></h1>
+<br>
+<fieldset>
+<legend><h2>signup form:</h2></legend>
+<form name="myform" onsubmit="return(validate());" onfocus="myfunction3(this)" >
+<table cellspacing="8" cellpadding="8" border=" 5">
+<tr>
+<td align="center" >First Name</td>
+<td><input type="text" name="First Name" onfocus="myfunction3(this)" id="t1"/></td>
+</tr>
+<tr>
+<td align="center" >Last Name</td>
+<td><input type="text" name="Last Name" onfocus="myfunction3(this)" id="t2"/></td>
+</tr>
+<tr>
+<td align="center" >D.O.B</td>
+<td><input type="date" name="D.O.B" onfocus="myfunction3(this)" id="t3" /></td>
+</tr>
+
+<tr>
+<td align="center" >gender</td>
+<td><input type="text" name="gender" onfocus="myfunction3(this)" id="t4" /></td>
+</tr>
+
+<tr>
+<td align="center" >Adress</td>
+<td><input type="text" name="Adress" onfocus="myfunction3(this)" id="t5" /></td>
+</tr>
+
+<tr>
+<td align="center" >mobile number</td>
+<td><input type="digit" name="mobile number" onfocus="myfunction3(this)" id="t6"/></td>
+</tr>
+
+<tr>
+<td align="center" >City</td>
+<td><input type="text" name="City" onfocus="myfunction3(this)" id="t7" /></td>
+</tr>
+
+<tr>
+<td align="center" >State</td>
+<td><input type="text" name="City" onfocus="myfunction3(this)" id="t8" /></td>
+</tr>
+
+<tr>
+<td align="center" >E-mail</td>
+<td><input type="text" name="E-mail" onfocus="myfunction3(this)" id="t9"/></td>
+</tr>
+
+<tr>
+<td align="center" >pincode</td>
+<td><input type="digit" name="pincode" onfocus="myfunction3(this)"  id="t10"/></td>
+
+</tr>
+
+<td align="center">password</td>
+<td><input type="password" name="Pass" onfocus="myfunction3(this)" id="t11"/></td>
+</tr>
+<tr>
+<td align="center">confirm password</td>
+<td><input type="password" name="ConfirmPass" onfocus="myfunction3(this)" id="t12"/></td>
+</tr>
+
+
+<tr>
+<td align="center">reset</td>
+<td><input type="reset" value="reset" /></td>
+</tr>
+
+<tr>
+<td align="center">subit</td>
+<td><input type="submit" value="submit" /></td>
+</tr>
+
+</form>
+</fieldset>
+</body>
+</html>

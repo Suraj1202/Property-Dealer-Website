@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+<style>
+
+body{
+background-color:lightgrey;
+}
+
+
+.grid-container{
+display:grid;
+grid-template-columns:80px 200px ; 
+grid-template-rows:80px  ;
+grid-gap:15px;
+border:2px solid black;
+background:skyblue;
+padding:10px;
+}
+
+input[type=text]{
+padding:5px 1px;
+margin:1px 0;
+box-sizing:border-box;
+border:3px solid #555;
+background-color:skyblue;
+}
+
+input[type=number]{
+padding:5px 1px;
+margin:1px 0;
+box-sizing:border-box;
+border:3px solid #555;
+background-color:skyblue;
+}
+
+input[type=submit]{
+padding:5px 1px;
+margin:1px 0;
+box-sizing:border-box;
+border:3px solid #555;
+background-color:skyblue;
+}
+
+input[type=reset]{
+padding:5px 1px;
+margin:1px 0;
+box-sizing:border-box;
+border:3px solid #555;
+background-color:skyblue;
+}
+
+p{
+color:darkblue;
+}  
+
+h4{
+color:darkblue;
+}
+
+
+h2{
+color:brown;
+}
+
+h1{
+color:darkblack;
+}
+
+fieldset{
+border:3px solid darkblue;
+
+}
+</style>
+<script>
+function validate(){
+
+if(document.getElementById("t1").value=="-1")
+{
+alert("please provide your Property type!");
+document.getElementById("t1").focus();
+return false;
+}
+
+if(document.getElementById("t2").value=="")
+{
+alert("please enter the name of  your City");
+document.getElementById("t2").focus();
+return false;
+}
+
+if(document.getElementById("t3").value=="")
+{
+alert("please enter your  Locality");
+document.getElementById("t3").focus();
+return false;
+}
+
+
+if(document.getElementById("t4").value=="-1")
+{
+alert("provide the furnished status!");
+document.getElementById("t4").focus();
+return false;
+}
+
+if(document.getElementById("t5").value=="")
+{
+alert("please provide lock-in-period !");
+document.getElementById("t5").focus();
+return false;
+}
+
+
+if(document.getElementById("t6").value=="")
+{
+alert("please provide the number of Ac Room!");
+document.getElementById("t6").focus();
+return false;
+}
+
+if(document.getElementById("t7").value=="")
+{
+alert("please provide the expected price!");
+document.getElementById("t7").focus();
+return false;
+}
+       return( true );
+      }
+
+function myfunction1(){
+alert("your form is submitted!");
+}
+
+function myfunction2(){
+alert("form is reseted!");
+}
+
+
+function myfunction(){
+ alert("Page is loading !! wait");
+}
+
+</script>
+</head>
+<body onload="myfunction()">
+<div class="grid-container">
+  <div class="item1">
+<img src="https://www.nanubhaiproperty.com/images/thumbs/logo/75243_broker-asian-property-dealers-in-hyderabad_300.jpeg" alt="image is not available" usemap="#workmap" width="80" height="80" border="3px solid black">
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="image is not available"  href="">
+</map>
+</div>
+<div class="item2">
+<h3>P.S DEALERS</h3>
+</div>
+</div>
+<hr>
+<hr>
+<h2><B><u>sell you property</u></B></h2><br>
+<p>we've over 15 lac buyers and tenants for you!</p><br>
+
+<fieldset>
+<form name="myform" onsubmit="return(validate());" onsubmit="myfunction1()" onreset="myfunction2()">
+
+<h2><b><u>Personal Details:</u></b><br>
+<h4><i>I am &emsp;</i>
+<input type="radio" id="order" name"personal details" value="personal details" >
+<label for="owner">owner</label>&emsp;
+<input type="radio" id="Agent" name"personal details" value="personal details">
+<label for="Agent">Agent</label>&emsp;
+<input type="radio" id="builder" name"personal details" value="personal details">
+<label for="builder">builder</label>&emsp;
+<hr>
+<br>
+<h2><b><u>Property Details:</u></b><br>
+<h4><i>For &emsp;</i>
+<input type="radio"  id="sale" name"personal details" value="personal details" >
+<label for="sale">sale</label>&emsp;
+<input type="radio" id="Rent/Lease" name"personal details" value="personal details">
+<label for="Rent/Lease">Rent/Lease</label>&emsp;
+<input type="radio" id="PG/HOSTEL" name"personal details" value="personal details">
+<label for="PG/HOSTEL">PG/HOSTEL</label>&emsp;
+<hr>
+
+<h4><i>property type:</i></h4>
+<select type="text" id="t1"/>
+<option value="-1" selected>select property</option>
+<option value="1" >Resedentail Property </option>	
+<option value="2" >Commercial Property </option>	
+</select>
+<hr>
+
+<h2><b><u>Property Location:</u></b><br>
+<h4><i>City:</i></h4>
+<input type="text" name="City" placeholder="City" id="t2"/>
+<hr>
+
+<h4><i>Locality:</i></h4>
+<input type="text" name="Locality" placeholder="Locality" id="t3"/>
+<hr>
+
+<h2><b><u>Property Features</u></b><br>
+<h4><i>Bedrooms:</i></h4>
+<input type="checkbox" id="bedroom1" name"bedroom1" value="1">
+<label for="checkbox"> 1</label>
+<input type="checkbox" id="bedroom2" name"bedroom2" value="2">
+<label for="checkbox"> 2</label>
+<input type="checkbox" id="bedroom3" name"bedroom3" value="3">
+<label for="checkbox"> 3</label>
+<input type="checkbox" id="bedroom4" name"bedroom4" value="4">
+<label for="checkbox"> 4</label>
+<input type="checkbox" id="bedroom5+" name"bedroom4+" value="4+">
+<label for="checkbox"> 4+</label>&emsp;
+<hr>
+<h4><i>Balcony:</i></h4>
+<input type="checkbox" id="Balcony1" name"Balcony1" value="1">
+<label for="checkbox"> 1</label>
+<input type="checkbox" id="Balcony2" name"Balcony2" value="2">
+<label for="checkbox"> 2</label>
+<input type="checkbox" id="Balcony3" name"Balcony3" value="3">
+<label for="checkbox"> 3</label>
+<input type="checkbox" id="Balcony4" name"Balcony4" value="4">
+<label for="checkbox"> 4</label>
+<input type="checkbox" id="Balcony4+" name"Balcony4+" value="4+">
+<label for="checkbox"> 5+</label>
+<hr>
+<h4><i>Total Floor:</i></h4>
+<input type="checkbox" id="floor1" name"floor1" value="1">
+<label for="checkbox"> 1</label>
+<input type="checkbox" id="floor2" name"floor2" value="2">
+<label for="checkbox"> 2</label>
+<input type="checkbox" id="floor3" name"floor3" value="3">
+<label for="checkbox"> 3</label>
+<input type="checkbox" id="floor4" name"floor4" value="4">
+<label for="checkbox"> 4</label>
+<input type="checkbox" id="floor5" name"floor5" value="5">
+<label for="checkbox"> 5</label>
+<input type="checkbox" id="floor6" name"floor6" value="6">
+<label for="checkbox"> 6</label>
+<input type="checkbox" id="floor7" name"floor7" value="7">
+<label for="checkbox"> 7</label>
+<input type="checkbox" id="floor8" name"floor8" value="8">
+<label for="checkbox"> 8</label>
+<input type="checkbox" id="floor9" name"floor9" value="9">
+<label for="checkbox"> 9</label>
+<input type="checkbox" id="floor10" name"floor10" value="10">
+<label for="checkbox"> 10</label>
+<input type="checkbox" id="floor11" name"floor11" value="11">
+<label for="checkbox"> 11</label>
+<input type="checkbox" id="floor12" name"floor12" value="12">
+<label for="checkbox"> 12</label>
+<input type="checkbox" id="floor13" name"floor13" value="13">
+<label for="checkbox"> 13</label>
+<input type="checkbox" id="floor14" name"floor14" value="14">
+<label for="checkbox"> 14</label>
+<input type="checkbox" id="floor14+" name"floor14+" value="14+">
+<label for="checkbox"> 14+</label>
+<hr>
+<br>
+<h4><i>furnished status:</i></h4>
+<select type="text" id="t4"/>
+<option value="-1" selected>furnished</option>
+<option value="1">unfurnished</option>	
+<option value="2">semifurnished </option>	
+</select>
+<hr>
+<br>
+<h4><i>Bathrooms:</i></h4>
+<input type="checkbox" id="Bathroom1" name"Bathroom1" value="1" >
+<label for="checkbox"> 1</label>
+<input type="checkbox" id="Bathroom2" name"Bathroom2" value="2">
+<label for="checkbox"> 2</label>
+<input type="checkbox" id="Bathroom3" name"Bathroom3" value="3">
+<label for="checkbox"> 3</label>
+<input type="checkbox" id="Bathroom4" name"Bathroom4" value="4+">
+<label for="checkbox"> 4+</label>
+<hr>
+<br>
+<h4><i>want to modify interiors &emsp;</i>
+<input type="radio" id="modify interior" name"modify interior" value="modify interior">
+<label for="modify interior"> yes </label>&emsp;
+<input type="radio" id="modify interior" name"modify interior" value="modify interior">
+<label for="modify interior"> no </label>&emsp;
+<hr>
+<br><br>
+<h4><i>Lock-in -period(in years)</i></h4>
+<input type="number" name="enter number" placeholder="enter number" id="t5"/>
+<hr>
+<br>
+
+<h4><i>Corner shop &emsp;</i>
+<input type="radio" id="shop" name"shop" value="shop">
+<label for="shop"> yes </label>&emsp;
+<input type="radio" id="shop" name"shop" value="shop">
+<label for="shop"> no </label>&emsp;
+<hr>
+
+<h4><i>Is Main Road Facing &emsp;</i>
+<input type="radio" id=" Main Road" name" Main Road" value=" Main Road">
+<label for=" Main Road"> yes</label>&emsp;
+<input type="radio" id=" Main Road" name" Main Road" value=" Main Road">
+<label for=" Main Road">no</label>&emsp;
+<hr>
+
+<h4><i>Attached Bathroom &emsp;</i>
+<input type="radio" id=" Bathroom" name" Bathroom" value=" Bathroom">
+<label for="Attached Bathroom">yes</label>&emsp;
+<input type="radio" id="Bathroom" name"Bathroom" value="Bathroom">
+<label for="Attached Bathroom">no</label>&emsp;
+<hr>
+
+<h4><i>Attached Balcony &emsp;</i>
+<input type="radio" id="Balcony" name="Balcony" value="Balcony">
+<label for="balcony">yes</label>&emsp;
+<input type="radio" id="Balcony" name="Balcony" value="Balcony">
+<label for="Balcony">no</label>&emsp;
+<hr>
+
+<h4><i>Common Space &emsp;</i>
+<input type="radio" id="common space" name"common space" value="common space">
+<label for="common space">yes</label>&emsp;
+<input type="radio" id="common space" name"common space" value="common space">
+<label for="common space">no</label>&emsp;
+<hr>
+
+<h4><i>Number Of AC Rooms</i></h4>
+<input type="number"  name="number of AC rooms" placeholder="number of AC rooms" id="t6"/><br>
+<hr>
+
+<h2><b><u>Price Details</u></b><br>
+<h4><i>Expected Price</i></h4>
+<input type="text" name="Expected Price" placeholder="Expexted Price" id="t7"/>
+<hr>
+<br>
+
+<h4><i>For Any Query Contact Us though the below link</i></h4>
+<a href="contactus.html">Contact Us</a>
+<hr>
+<br>
+<input type="submit" value="submit" >
+<input type="reset" value="reset">
+<hr>
+</form>
+</fieldset>
+</body>
+</html>

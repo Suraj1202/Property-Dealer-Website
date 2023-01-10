@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:lightgrey;
+}
+
+.grid-container {
+  display:grid;
+  grid-template-columns: 100px 200px  ;
+  grid-template-rows: 40px 50px  ;
+  grid-gap: -500px;
+  background-color:#f24c4e;
+   border-radius: 10px 20px;
+  padding: -2px;
+
+}
+img {
+  border-radius: 40%;
+  padding:10px;
+}
+
+#touch{
+margin:40px ;
+padding:100px;
+width:1000%;
+color:black;
+font-family:Arial, Helvetica, sans-serif;
+font-size:22px;
+text-align:center;
+}
+
+
+hr {
+border:none;
+height: 20px;
+width: 90%;
+height: 50px;
+margin-top: 0;
+border-bottom: 1px solid #1f1209;
+box-shadow: 0 20px 20px -20px #333;}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: ;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: #f24c4e;
+  color: white;
+}
+</style>
+
+
+      
+      <script>
+         function validate()
+      {
+      
+         if( document.getElementById("t1").value== "" )
+         {
+            alert( "Please provide your name!" );
+            document.getElementById("t1").focus() ;
+            return false;
+         }
+          var emailID = document.getElementById("t2").value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("t2").value == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.getElementById("t2").focus() ;
+            return false;
+         }
+                
+         if( document.getElementById("t3").value == "")
+         {
+            alert( "Please provide your Phone Number." );
+            document.getElementById("t3").focus() ;
+            return false;
+         }
+         
+         if( document.getElementById("t4").value == "-1" )
+         {
+            alert( "Please provide your State!" );
+            return false;
+         }
+    
+        if( document.getElementById("t5").value == "-1" )
+         {
+            alert( "Please provide your Property Type!" );
+            return false;
+         }
+     
+       if( document.getElementById("t6").value == "-1" )
+         {
+            alert( "Please provide your Ad Property Type!" );
+            return false;
+         }
+    
+    
+        if( document.getElementById("t7").value == "" )
+         {
+            alert( "Please provide images of your Property " );
+            return false;
+         }
+    
+      return(true);
+    }
+
+      </script>
+</head>
+<body>
+<div class="grid-container">
+  <div class="item1">
+
+        
+			<img src="https://www.nanubhaiproperty.com/images/thumbs/logo/75243_broker-asian-property-dealers-in-hyderabad_300.jpeg" width="80" height="70";/>
+        
+		</div>
+  <div class="item2">
+  <br>
+  <h2>P.S Dealers</h2>
+  </div>
+
+
+<section id="touch">
+  <h2 >Post Property For Free</h2>
+ <hr>
+<br>
+<section id="form">
+<center> <form  name="myForm" onsubmit="return(validate());">
+         <table cellspacing="2" cellpadding="2" border="1">
+            
+            <tr>
+               <td align="left">Name</td>
+               <td><input type="text" name="Name" id="t1" /></td>
+            </tr>
+            
+            <tr>
+               <td align="left">EMail</td>
+               <td><input type="text" name="EMail" id="t2" /></td>
+            </tr>
+            
+            <tr>
+               <td align="left">Phone Number</td>
+               <td><input type="text" name="Zip" id="t3"/></td>
+            </tr>
+            
+            <tr>
+               <td align="left">State</td>
+               <td>
+                  <select name="State" id="t4"/>
+                     <option value="-1" selected>Choose yours</option>
+                     <option value="1">Andhra Pradesh</option>
+                     <option value="2">Arunachal Pradesh</option>
+                     <option value="4"> Bihar</option>
+                     <option value="5">Chhattisgarh</option>
+                     <option value="6">Goa </option>
+                     <option value="7">Gujarat</option>
+                     <option value="8">Haryana</option>
+                     <option value="9">Himachal Pradesh</option>
+                     <option value="10">Jammu and Kashmir Srinagar </option>
+                     <option value="11">Jharkhand</option>
+                     <option value="12">Karnataka</option>
+                     <option value="13"> Kerala</option>
+                     <option value="14">Madhya Pradesh</option>
+                     <option value="15">Maharashtra</option>
+                     <option value="16">Manipur</option>
+                     <option value="17"> Meghalaya</option>
+                     <option value="18">Mizoram</option>
+                     <option value="19">Nagaland</option>
+                     <option value="20">Odisha</option>
+                     <option value="21">Punjab</option>
+                     <option value="22">Sikkim</option>
+                     <option value="22"> Tamil Nadu</option>
+                     <option value="22">Telangana</option>
+                     <option value="22" >Tripura</option>
+                     <option value="22">Uttar Pradesh</option>
+                     <option value="22">Rajasthan</option>
+                     <option value="22">Uttarakhand</option>
+                     <option value="22">West Bengal</option>
+                     
+
+
+                  </select>
+               </td>
+            </tr>
+<tr>
+ <td align="left">Property Type</td>
+               <td>
+                  <select name="Property Type" id="t5"/>
+               <option value="-1" selected>Choose yours</option>
+                     <option value="1">Residental</option>
+                     <option value="2">Commercial</option>
+                     <option value="3">Vacant Land</option>
+ 
+                  </select>
+               </td>
+            </tr>
+            
+<tr>
+<td align="left">Property Ad Type</td>
+               <td>
+                  <select name="Property Ad Type" id="t6"/>
+               <option value="-1" selected>Choose yours</option>
+                     <option value="1">Apartment</option>
+                     <option value="2">Builder Floor</option>
+                     <option value="2">Plot</option>
+                     <option value="2">Villa/Bunglow</option>
+                     <option value="2">Office</option>
+                    
+                  </select>
+               </td>
+                 </tr>
+     
+
+<tr>
+<td align="left">Add Photos of your property</td>
+<td>
+<label for="myfile">select the file:</label><br>
+<input type="file"   name="myfile" id="t7"/ ><br><br>
+</td>
+ </tr>
+     
+
+  <tr>
+<td align="right"></td>
+             
+               <td><input type="submit" value="Submit" /></td>
+             
+   </tr>
+         </table>
+      </form>
+
+<hr>
+<h4>More Information about Property</h4>
+
+<textarea name="message" rows="15" cols="60"></textarea>
+<br>
+<button class="button button1">Post our Ad Now</button>
+
+</body>
+</html>

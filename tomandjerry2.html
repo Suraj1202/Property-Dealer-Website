@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>property website</title>
+<style>
+
+.grid-container{
+display:grid;
+grid-template-columns:190px 190px 190px 190px 190px 190px 190px ; 
+grid-template-rows:70px 80px ;
+grid-gap:30px;
+border:5px solid black;
+background:skyblue;
+padding:20px;
+}
+
+.grid-setdata{
+display:grid;
+grid-template-columns:280px 280px 280px 280px 280px ; 
+grid-template-rows:70px 20px ;
+border:5px solid black;
+background:skyblue;
+padding:20px;
+}
+
+.grid-details{
+display:grid;
+grid-template-columns:250px 250px 250px 250px ; 
+grid-template-rows:250px ;
+grid-gap:90px;
+border:5px solid black;
+background:skyblue;
+padding:20px;
+}
+
+.grid-contains{
+display:grid;
+grid-template-columns:auto  ; 
+grid-template-rows:40px ;
+grid-gap:30px;
+padding:10px;
+}
+
+.grid-information{
+display:grid;
+grid-template-columns:250px 250px 250px  250px  250px  ; 
+grid-template-rows:70px  ;
+grid-gap:60px;
+border:5px solid black;
+background:skyblue;
+padding:5px;
+}
+
+.grid-info{
+display:grid;
+grid-template-columns:250px 250px 250px 250px 250px  ; 
+grid-template-rows:70px  ;
+grid-gap:60px;
+background:skyblue;
+padding:2px;
+}
+
+.grid-item{
+background-color:pink;
+border:3px solid blue;
+padding:10px;
+font-size:20px;
+text-align:center;
+}
+
+select[type=text]{
+padding:10px 20px;
+margin:8px 0;
+border:3px solid #555;
+background-color:lightgreen;
+align="center";
+}
+
+select[type=number]{
+padding:12px 20px;
+margin:8px 0;
+border:3px solid #555;
+background-color:lightgreen;
+align="center";
+}
+
+input[type=submit]{
+padding:12px 20px;
+margin:8px 0;
+border:3px solid #555;
+background-color:lightgreen;
+align="center";
+}
+
+
+input[type=button]{
+padding:12px 20px;
+margin:8px 0;
+border:3px solid #555;
+background-color:lightgreen;
+align="center";
+}
+
+fieldset{
+background-image:url("https://c4.wallpaperflare.com/wallpaper/294/320/850/skyline-hong-kong-nightscape-cityscape-wallpaper-preview.jpg");
+border:7px solid black;
+}
+
+body {
+background-color:lightgrey;
+}
+
+h1{
+color:darkblue;
+}
+
+h3{
+color:blue;
+}
+</style>
+<script>
+
+function search(){
+if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="9")
+{
+            window.location="file:///C:/Users/hp/Documents/assignment/seach1.html";
+      } 
+     
+
+  else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search2.html";
+}
+
+ else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search3.html";
+}
+
+
+  else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch2.html";
+}
+
+ else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch3.html";
+}
+
+  
+else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vacccantlandsearch2.html";
+}
+  else if(document.getElementById("t1").value=="1"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch3.html";
+}
+
+
+
+
+else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/resedentialsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search2.html";
+}
+
+ else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search3.html";
+}
+  else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch2.html";
+}
+
+ else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch3.html";
+}
+  else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch1.html";
+}
+  else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vacccantlandsearch2.html";
+}
+else if(document.getElementById("t1").value=="2"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch3.html";
+}
+
+
+
+else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/seach1.html";
+}
+
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search2.html";
+}
+ else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="6"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/search3.html";
+}
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch2.html";
+}
+
+ else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="7"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/commercialsearch3.html";
+}
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="9")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch1.html";
+}
+
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="10")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vacccantlandsearch2.html";
+}
+  else if(document.getElementById("t1").value=="3"&&document.getElementById("t2").value=="8"&&document.getElementById("t3").value=="11")
+{
+    window.location="file:///C:/Users/hp/Documents/assignment/vaccantlandsearch3.html";
+}
+
+ else{
+      alert("your search is not available!");
+}    
+
+}
+
+function myfunction(){
+alert("please wait you page is loading!!");
+}
+</script>
+</head>
+<body onload="myfunction()">
+<h1><center><u><b> P.S DEALERS </u></b></center></h1>
+<br><br>
+<fieldset>
+<form method=post  >
+
+<div class="grid-container">
+<div class="item1">
+<image src="https://www.nanubhaiproperty.com/images/thumbs/logo/75243_broker-asian-property-dealers-in-hyderabad_300.jpeg" alt="image not available"   usemap="#workmap" width="180" height="180"  border="5px solid black">
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="image is not available"  href="file:///C:/Users/hp/Documents/assignment/companylogo.html">
+</map>
+</div>
+
+<div class="grid-item">
+<a href="buy.html">Buy</a>
+</div>
+<div class="grid-item">
+<a href="rent.html">Rent</a>
+</div>
+<div class="grid-item">
+<a href="sellnew.html">Sell</a></div>
+<div class="grid-item">
+<a href="contactus.html">Contact Us</a>
+</div>
+<div class="grid-item">
+<a href="table.html">Hello/sign up</a></div>
+<div class="grid-item">
+<a href="postpropertyforfree.html">Post property for free</a></div>
+</div>
+
+</fieldset>
+<fieldset>
+<div class="grid-setdata">
+<br><br>
+<select type="text" id="t1"/>
+<option  value="-1" selected >location</option>
+<option value="1">Andhra Pradesh</option>	
+<option value="2"> Arunachal Pradesh</option>	
+<option value="3"> uttrakhand </option>	
+
+</select>
+
+<select type="text" id="t2"/>
+<option value="-2" selected>property type</option>
+<option value="6">residential properties</option>
+<option value="7">commercial properties</option>
+<option value="8">vaccant land</option>
+</select>
+
+<select type="number" id="t3"/>
+<option value="-3" selected>budget</option>
+<option value="9" >1-2 crore</option>
+<option value="10" >2-3 crore</option>
+<option value="11" >3-4 crore</option>
+</select>
+<input type="button" value="search" onclick="search();"/>
+</form>
+<br>
+</div>
+</fieldset>
+<fieldset>
+<div class="grid-details">
+<br>
+<div class="grid-item">residential properties
+<div class="grid-contains">
+<br>
+<div class="grid-item"><a href="detailspf resedential.html">see details</a></div>
+</div>
+</div>
+
+<div class="grid-item">commercial properties
+<div class="grid-contains">
+<br>
+<div class="grid-item"><a href="detailsofcommercial.html">see details</a></div>
+</div>
+</div>
+
+<div class="grid-item">vaccant lands
+<div class="grid-contains">
+<br>
+<div class="grid-item"><a href="detailsofvaccantland.html">see details</a></div>
+</div>
+</div>
+</fieldset>
+
+<fieldset>
+<h2><B><i><u><center>what makes us prefred choice</center></u></i></B></h2>
+
+<div class="grid-information">
+<br>
+<image src="https://as1.ftcdn.net/jpg/02/60/39/98/500_F_260399843_qjCsaupNFbeU1cT9GAn0VOYIX3hrR0B8.jpg" alt="image not found"     width="93.992px" height="94.403px" border="5px solid black" >
+
+<image src="https://thumbs.dreamstime.com/b/trust-icon-simple-design-vector-illustration-146407741.jpg" alt="image not found"
+width="100px" height="100px" border="5px solid black">
+
+
+<image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwzza6lC7s69mo1Et-wuBfd0B1xTnYH8sNV3jH3QUSGyO9H_Q5f59eQwOcJthxpKnqmI&usqp=CAU"  alt="image not found" width="110px" height="100px" border="5px solid black">
+
+<image src="https://thumbs.dreamstime.com/b/expert-advice-line-icon-neon-style-element-human-resources-icon-mobile-concept-web-apps-black-background-expert-148172788.jpg" alt="image not found" width="105px" height="100px" border="5px solid black">
+<br>
+<div class="grid-info">
+<h3><u><i>maximum choice</u></i></h3>
+<h3><u><i>buyers trust</u></i></h3>
+<h3><u><i>seller properties</u></i></h3>
+<h3><u><i>expert guidence</u></i></h3>
+</div>
+</fieldset>
+</div>
+</body>
+</html>
